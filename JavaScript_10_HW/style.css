@@ -1,0 +1,19 @@
+.Chak {
+   
+    font: 16px/1.5 "Courier New", Arial, sans-serif;
+    text-align: center;
+    color: #222;
+    height: auto;
+    padding: 0;
+    width: 360px;
+}
+
+.content {
+font: 16px/1.5 "Courier New", Arial, sans-serif;
+color: #222;
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+}

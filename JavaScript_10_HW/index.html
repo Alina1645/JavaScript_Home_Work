@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    
-    <title>Home_work_10</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="wvalueth=device-wvalueth, initial-scale=1.0">
+  <link rel="stylesheet" href="/JavaScript_home_work/JavaScript_10_HW/style.css">
+  <title>Home_work_10</title>
 </head>
+
 <body>
-    
+  <img class="Chak" src="/JavaScript_home_work/JavaScript_10_HW/chucknorris_logo_coloured_small@2x.png" alt="chuck">
+
+  <div class="content">
+    <!-- <div class="JSON_file">
+    <h3 class="value"></h3>
+    <a class="url"></a>
+</div> -->
+  </div>
+  <script src="data.js"></script>
+  <script>
+    const data = JSON.parse(dataInfo);
+
+    data.forEach(element => {
+      const divEl = document.createElement(`div`);
+      divEl.classList.add(`JSON_file`);
+      document.querySelector(`.content`).appendChild(divEl);
+
+      const h3El = document.createElement(`h3`);
+      h3El.classList.add(`value`);
+      h3El.textContent = element.value;
+      divEl.appendChild(h3El);
+
+
+
+      const aEl = document.createElement(`a`);
+      aEl.classList.add(`url`);
+      aEl.textContent = `Cсылка`;
+      aEl.href = element.url;
+      divEl.appendChild(aEl);
+
+    });
+  </script>
 </body>
+
 </html>
